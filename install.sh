@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ClusterQuest installer
-# Usage: curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/install.sh | bash
+# Usage: curl -sSL https://raw.githubusercontent.com/dchrzanowski/kubernetes-game/refs/heads/master/install.sh | bash
 
 set -e
 
@@ -19,6 +19,8 @@ chmod +x "${GAME_DIR}/run.sh"
 chmod +x "${GAME_DIR}/engine/"*.sh
 chmod +x "${GAME_DIR}/levels/"*/validate.sh
 
+cd kubernetes-game
+
 echo ""
 echo "Done! Start the game with:"
-echo "  ${GAME_DIR}/run.sh"
+echo "  ./run.sh"
