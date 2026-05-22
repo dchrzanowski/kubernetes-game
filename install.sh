@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ClusterQuest installer
-# Usage: curl -sSL https://raw.githubusercontent.com/dchrzanowski/kubernetes-game/main/install.sh | bash
+# Usage: curl -sSL https://raw.githubusercontent.com/dchrzanowski/kubernetes-game/refs/heads/master/install.sh | bash
 
 set -e
 
