@@ -1,0 +1,3 @@
+Check the rollout history: kubectl rollout history deployment/backend -n level-4
+Then undo the bad release: kubectl rollout undo deployment/backend -n level-4
+Or set a known good image directly: kubectl set image deployment/backend backend=nginx:1.25 -n level-4

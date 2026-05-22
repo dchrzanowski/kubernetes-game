@@ -1,0 +1,2 @@
+Scale the deployment with: kubectl scale deployment api-server --replicas=3 -n level-3
+Then watch pods come up: kubectl get pods -n level-3 -w

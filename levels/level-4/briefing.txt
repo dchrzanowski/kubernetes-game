@@ -1,0 +1,17 @@
+  MISSION: "Broken Release"
+  ─────────────────────────────────────────────────
+
+  Someone pushed a bad release to production. The backend
+  deployment is stuck — pods can't start because the
+  container image doesn't exist.
+
+  You need to roll back to the last working version.
+
+  Namespace: level-4
+
+  Useful commands to get started:
+    kubectl get pods -n level-4
+    kubectl rollout history deployment/backend -n level-4
+    try the kubectl rollout undo
+
+  WIN CONDITION: All backend pods reach Running state.

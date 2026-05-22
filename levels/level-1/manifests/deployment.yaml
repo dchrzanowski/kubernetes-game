@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: busybox:latest
+        imagePullPolicy: Never
+        command: ["/bin/sh", "-c"]
+        args:
+        - |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "ERROR: DATABASE_URL missing"
+            exit 1
+          fi
+          echo "App started. DATABASE_URL=$DATABASE_URL"
+          sleep 3600
+        # DATABASE_URL is intentionally missing — player must add it

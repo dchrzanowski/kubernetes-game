@@ -1,0 +1,20 @@
+  MISSION: "Where Are My Pods?"
+  ─────────────────────────────────────────────────
+
+  Welcome to ClusterQuest, SRE.
+
+  The frontend deployment is down. Pods are crash-looping
+  and the on-call team is panicking.
+
+  Your job: find out why the pod is failing and fix it.
+
+  Namespace: level-1
+
+  The database connection string is: postgres://db:5432/app
+
+  Useful commands to get started:
+    kubectl get pods -n level-1
+    kubectl describe pod <pod-name> -n level-1
+    kubectl logs <pod-name> -n level-1
+
+  WIN CONDITION: All pods in level-1 reach Running state.

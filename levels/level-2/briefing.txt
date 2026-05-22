@@ -1,0 +1,16 @@
+  MISSION: "The Website Is Down"
+  ─────────────────────────────────────────────────
+
+  The webapp pods are running fine, but users can't reach
+  the site. The service isn't routing traffic anywhere.
+
+  Namespace: level-2
+
+  Useful commands to get started:
+    kubectl get svc -n level-2
+    kubectl get endpoints -n level-2
+    kubectl get pods --show-labels -n level-2
+    kubectl describe svc webapp-svc -n level-2
+
+  WIN CONDITION: The webapp-svc Service has at least one
+  ready endpoint.

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  annotations:
+    # This simulates a bad release — the image tag does not exist
+    kubernetes.io/change-cause: "release v2.0.0-broken"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: nginx:this-tag-does-not-exist
+        ports:
+        - containerPort: 80

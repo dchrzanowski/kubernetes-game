@@ -1,0 +1,15 @@
+  MISSION: "Scaling for Traffic"
+  ─────────────────────────────────────────────────
+
+  Black Friday hit early. The api-server is running on a
+  single pod and it's getting hammered. You need to scale
+  it up to handle the load.
+
+  Namespace: level-3
+
+  Useful commands to get started:
+    kubectl get deployment api-server -n level-3
+    kubectl get pods -n level-3
+
+  WIN CONDITION: The api-server deployment has at least
+  3 ready replicas.
