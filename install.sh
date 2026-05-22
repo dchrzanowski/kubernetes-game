@@ -19,7 +19,7 @@ chmod +x "${GAME_DIR}/run.sh"
 chmod +x "${GAME_DIR}/engine/"*.sh
 chmod +x "${GAME_DIR}/levels/"*/validate.sh
 
-cd kubernetes-game
+cd clusterquest
 
 echo ""
 echo "Done! Start the game with:"
