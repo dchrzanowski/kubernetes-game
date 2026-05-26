@@ -1,2 +1,6 @@
-Scale the deployment with: kubectl scale deployment api-server --replicas=3 -n level-3
-Then watch pods come up: kubectl get pods -n level-3 -w
+// RECOVERED FRAGMENT — email draft, never sent
+// "The traffic is not coming from outside. I ran the
+//  numbers. It's internal. One pod is not enough.
+//  We need at least three. I'm going to scale it now
+//  and then I'm going to find out where the requests—"
+// Fix: kubectl scale deployment api-server --replicas=3 -n level-3

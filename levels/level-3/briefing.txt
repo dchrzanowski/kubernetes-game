@@ -1,15 +1,21 @@
-  MISSION: "Scaling for Traffic"
+  CASE FILE 003 — "The Swarm"
   ─────────────────────────────────────────────────
 
-  Black Friday hit early. The api-server is running on a
-  single pod and it's getting hammered. You need to scale
-  it up to handle the load.
+  Something is wrong with the api-server deployment.
+
+  It bears the name of one of the missing engineers —
+  we don't know if that's significant. What we do know
+  is that it's running on a single pod, and the cluster
+  logs show traffic volumes that should not be possible
+  for a building with no one in it.
+
+  The system is being overwhelmed. Scale the deployment
+  to 3 replicas before it collapses entirely.
 
   Namespace: level-3
 
-  Useful commands to get started:
+  Commands to begin your investigation:
     kubectl get deployment api-server -n level-3
     kubectl get pods -n level-3
 
-  WIN CONDITION: The api-server deployment has at least
-  3 ready replicas.
+  OBJECTIVE: api-server deployment must have at least 3 ready replicas.

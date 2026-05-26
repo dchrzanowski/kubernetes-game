@@ -1,17 +1,21 @@
-  MISSION: "Broken Release"
+  CASE FILE 004 — "Bad Blood"
   ─────────────────────────────────────────────────
 
-  Someone pushed a bad release to production. The backend
-  deployment is stuck — pods can't start because the
-  container image doesn't exist.
+  This is the last active deployment. The backend.
 
-  You need to roll back to the last working version.
+  Someone pushed a release the night the engineers
+  vanished. The image tag is one we don't recognise —
+  it doesn't exist in any known registry. The pods
+  cannot start. They keep trying.
+
+  Roll it back. Whatever was deployed that night,
+  we don't want it running.
 
   Namespace: level-4
 
-  Useful commands to get started:
+  Commands to begin your investigation:
     kubectl get pods -n level-4
     kubectl rollout history deployment/backend -n level-4
-    try the kubectl rollout undo
+    kubectl rollout undo deployment/backend -n level-4
 
-  WIN CONDITION: All backend pods reach Running state.
+  OBJECTIVE: All backend pods must reach Running state.

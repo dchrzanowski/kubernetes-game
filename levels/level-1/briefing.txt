@@ -1,20 +1,24 @@
-  MISSION: "Where Are My Pods?"
+  CASE FILE 001 — "The Last Ping"
   ─────────────────────────────────────────────────
 
-  Welcome to ClusterQuest, SRE.
+  Investigator. You've been called to the scene.
 
-  The frontend deployment is down. Pods are crash-looping
-  and the on-call team is panicking.
+  Aldric Systems. Abandoned 11 days ago. No sign of the
+  engineers. One terminal was still on when we arrived.
 
-  Your job: find out why the pod is failing and fix it.
+  The frontend deployment is crash-looping. Whatever the
+  engineers were working on when they disappeared — this
+  was it. Find out why the pods died.
 
   Namespace: level-1
 
-  The database connection string is: postgres://db:5432/app
+  The last known database connection string found on a
+  sticky note near the terminal:
+    postgres://db:5432/app
 
-  Useful commands to get started:
+  Commands to begin your investigation:
     kubectl get pods -n level-1
     kubectl describe pod <pod-name> -n level-1
     kubectl logs <pod-name> -n level-1
 
-  WIN CONDITION: All pods in level-1 reach Running state.
+  OBJECTIVE: Bring all pods in level-1 to Running state.

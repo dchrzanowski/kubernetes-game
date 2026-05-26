@@ -1,16 +1,23 @@
-  MISSION: "The Website Is Down"
+  CASE FILE 002 — "No One Answers"
   ─────────────────────────────────────────────────
 
-  The webapp pods are running fine, but users can't reach
-  the site. The service isn't routing traffic anywhere.
+  The webapp pods are alive. Running. Waiting.
+  But the service routes to nothing. Like the engineers —
+  present on the roster, unreachable by phone.
+
+  We found a handwritten note in the server room:
+  "Changed the labels. They won't find it now."
+  We don't know who wrote it, or what they were hiding.
+
+  The service selector no longer matches the pods.
+  Fix it.
 
   Namespace: level-2
 
-  Useful commands to get started:
+  Commands to begin your investigation:
     kubectl get svc -n level-2
     kubectl get endpoints -n level-2
     kubectl get pods --show-labels -n level-2
     kubectl describe svc webapp-svc -n level-2
 
-  WIN CONDITION: The webapp-svc Service has at least one
-  ready endpoint.
+  OBJECTIVE: webapp-svc must have at least one ready endpoint.

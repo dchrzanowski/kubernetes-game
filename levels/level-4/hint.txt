@@ -1,3 +1,7 @@
-Check the rollout history: kubectl rollout history deployment/backend -n level-4
-Then undo the bad release: kubectl rollout undo deployment/backend -n level-4
-Or set a known good image directly: kubectl set image deployment/backend backend=nginx:1.25 -n level-4
+// RECOVERED FRAGMENT — voice memo, auto-transcribed
+// "...the image tag is wrong. It's not in our registry.
+//  It's not in any registry. I don't know who pushed it
+//  or what it does. I'm rolling back. I'm rolling back
+//  right now and then I'm calling someone because this—"
+// [RECORDING ENDS]
+// Fix: kubectl rollout undo deployment/backend -n level-4

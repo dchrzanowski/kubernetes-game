@@ -1,4 +1,6 @@
-Compare the service selector to the pod labels:
-  kubectl describe svc webapp-svc -n level-2   (look at Selector)
-  kubectl get pods --show-labels -n level-2    (look at LABELS)
-They must match. Fix with: kubectl patch svc webapp-svc -n level-2 -p '{"spec":{"selector":{"app":"webapp"}}}'
+// RECOVERED FRAGMENT — sticky note, found under keyboard
+// "selector: app=forgotten — that's what it says now.
+//  It used to be app=webapp. Someone changed it.
+//  The pods are still labelled webapp. The service just
+//  can't see them anymore."
+// Fix: kubectl patch svc webapp-svc -n level-2 -p '{"spec":{"selector":{"app":"webapp"}}}'
