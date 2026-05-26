@@ -19,3 +19,9 @@
     kubectl rollout undo deployment/backend -n level-4
 
   OBJECTIVE: All backend pods must reach Running state.
+  .
+  .
+  .
+  .
+  .
+  You hear heavy stomping behind you. Something large is approaching...

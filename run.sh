@@ -57,7 +57,7 @@ run_level() {
 
   # Start hint timer in background
   (
-    sleep 60
+    sleep 120
     echo -e "\033[1;33m\n  💡 HINT: $(cat "${GAME_DIR}/levels/level-${level}/hint.txt")\n\033[0m"
   ) &
   HINT_PID=$!

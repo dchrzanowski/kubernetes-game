@@ -16,6 +16,9 @@
   sticky note near the terminal:
     postgres://db:5432/app
 
+  You also find a partially burned out sticky notes that says:
+    kubectl set env deployment/frontend ........ -n level-1
+
   Commands to begin your investigation:
     kubectl get pods -n level-1
     kubectl describe pod <pod-name> -n level-1

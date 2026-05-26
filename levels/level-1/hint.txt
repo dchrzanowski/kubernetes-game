@@ -2,4 +2,4 @@
 // "...checked the logs. It keeps saying the same thing.
 //  The env var is missing. DATABASE_URL. I don't know how
 //  it got removed. I didn't touch it. No one touched it."
-// Fix: kubectl set env deployment/frontend DATABASE_URL=postgres://db:5432/app -n level-1
+// Fix: kubectl set env deployment/frontend DATABASE_URL=DATABASE_URL_HERE -n level-1

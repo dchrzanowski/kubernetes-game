@@ -12,6 +12,15 @@
   The service selector no longer matches the pods.
   Fix it.
 
+  A half dead employee named J(a)son screams:
+  """
+  -p '{"spec":{"selector":{"app":"webapp"}}}'
+  Because some eeejit called the webapp "web-app"!!!!
+  """
+  And J(a)son passes away with his last words....
+
+  You also find a sticky note that says: kubectl patch svc webapp-svc
+
   Namespace: level-2
 
   Commands to begin your investigation:

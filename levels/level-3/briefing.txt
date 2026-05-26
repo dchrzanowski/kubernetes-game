@@ -19,3 +19,6 @@
     kubectl get pods -n level-3
 
   OBJECTIVE: api-server deployment must have at least 3 ready replicas.
+
+  As you read the objective you turn around and read a huge writing on the wall (in blood) that says:
+  kubectl scale deployment SRV_NAME HOW_DO_I_SET_REPLICAS__DASH_DASH_WHAT????
